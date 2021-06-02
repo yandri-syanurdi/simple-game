@@ -1,0 +1,108 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  cursor: none;
+}
+body {
+  background-image: url(./img/bc.jpg);
+  color: #fff;
+  display: flex;
+  /* display: none; */
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+  
+  /* overflow: hidden; */
+  
+  /* overflow-y: hidden;  */
+  /* overflow-x: hidden;  */
+  
+  /* overflow-x: hidden; */
+  /* overflow-x: scroll; */
+  overflow-y: scroll; 
+  
+  /* -ms-overflow-style: none;  
+  scrollbar-width: none;  */
+  
+  
+}
+.heading {
+  font-size: 2em;
+  margin: 1em 0;
+  text-align: center;
+}
+.score {
+  font-size: 1.3em;
+  margin: 1em 0;
+  text-align: center;
+}
+.holesCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  justify-items: center;
+}
+.hole {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #110f0f;
+  overflow: hidden;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+}
+.mole {
+  position: absolute;
+  z-index: 1;
+  height: 72px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: appear 0.3s linear;
+  pointer-events: none;
+}
+@keyframes appear {
+  from {
+    bottom: -60px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+.buttons {
+  margin-top: 3em;
+  text-align: center;
+}
+.buttons button {
+  padding: 15px 45px;
+  background-color: #BEBEBE;
+  border: 1px solid #fff;
+  color: #202020;
+  border-radius: 3px;
+  outline: none;
+}
+button.stop {
+  display: none;
+}
+.cursor img {
+  position: absolute;
+  height: 125px;
+  z-index: 2;
+  transform: translate(-10px, -40px);
+  pointer-events: none;
+}
+@keyframes hit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-30deg);
+  }
+}
