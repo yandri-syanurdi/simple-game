@@ -1,4 +1,4 @@
 Game Sederhana Oleh Yandri Syanurdi
 
-creator :
-![](https://imgur.com/3mKxUyV.png)
+
+![](https://spada.pnp.ac.id/pluginfile.php/8838/user/icon/moove/f1?rev=6881)
